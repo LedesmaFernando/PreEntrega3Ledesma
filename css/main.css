@@ -242,4 +242,21 @@
   justify-content: center;
 }
 
+.contenido-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #2727E6;
+  padding-top: 40px;
+}
+.contenido-nosotros h1 {
+  font-size: 4rem;
+}
+.contenido-nosotros p {
+  font-size: 1.2rem;
+  margin: 20px 80px;
+}
+
 /*# sourceMappingURL=main.css.map */

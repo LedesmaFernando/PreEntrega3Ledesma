@@ -1,0 +1,18 @@
+$color-letra:white;
+$color-seccion:#2727E6;
+.contenido-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-letra;
+    background-color: $color-seccion;
+    padding-top: 40px;
+    h1{
+        font-size: 4rem;
+    };
+    p{
+        font-size: 1.2rem;
+        margin: 20px 80px;
+    }
+}
