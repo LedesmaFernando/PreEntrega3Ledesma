@@ -1,7 +1,35 @@
+$color-fondo: #4D4DE3;
 .envio{
-    background-color: #1757E5;
-    border: red solid 1px;
+    background-color: $color-fondo;
+    height: 450px;
     width: 70%;
     margin: 15px;
     border-radius: 15px;
+    display: grid;
+    grid-template-rows: 50px 350px;
+    padding-top: 50px;
+    grid-template-areas:"titulo-envio ."
+                        "medios-pago  direccion";
+    .titulo-envio-pago{
+        grid-area: titulo-envio;
+        margin-left: 10px
+    };
+    .medio-pago{
+        grid-area: medios-pago;
+        margin-left: 80px
+    };
+    .direccion{
+        grid-area: direccion;
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px;
+        input{
+            margin: 10px;
+        }
+    }
+    .boton-compra{
+        grid-area: boton-compra;
+        display: flex;
+        justify-content: center;
+    }
 }

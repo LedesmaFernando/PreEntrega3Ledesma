@@ -1,17 +1,18 @@
+$color-fondo: #4D4DE3;
+$color-seccion: #4DACE3;
 .compra{
-    border: solid red 1px;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: row;
+    background-color: $color-seccion;
     .articulos{
         width: 30%;
         height: 450px;
         margin: 15px;
         padding-top: 50px;
         border-radius: 10px;
-        border: blue solid 1px;
         display: grid;
-        background-color: rgb(79, 79, 168);
+        background-color: $color-fondo;
         grid-template-rows: repeat(6, 50px);
         grid-template-areas:    "titulo-compra ."
                                 "producto1 precio1" 
@@ -86,12 +87,12 @@
         align-items: center;          
     }
     label{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: white;
         margin: 0px 10px;
     }
     p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: white;
         margin: 0px;
     }

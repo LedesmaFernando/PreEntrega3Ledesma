@@ -117,10 +117,10 @@
 }
 
 .compra {
-  border: solid red 1px;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: row;
+  background-color: #4DACE3;
 }
 .compra .articulos {
   width: 30%;
@@ -128,9 +128,8 @@
   margin: 15px;
   padding-top: 50px;
   border-radius: 10px;
-  border: blue solid 1px;
   display: grid;
-  background-color: rgb(79, 79, 168);
+  background-color: #4D4DE3;
   grid-template-rows: repeat(6, 50px);
   grid-template-areas: "titulo-compra ." "producto1 precio1" "producto2 precio2" "producto3 precio3" "producto4 precio4" ". ." "total suma";
 }
@@ -199,22 +198,48 @@
   align-items: center;
 }
 .compra label {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   margin: 0px 10px;
 }
 .compra p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   margin: 0px;
 }
 
 .envio {
-  background-color: #1757E5;
-  border: red solid 1px;
+  background-color: #4D4DE3;
+  height: 450px;
   width: 70%;
   margin: 15px;
   border-radius: 15px;
+  display: grid;
+  grid-template-rows: 50px 350px;
+  padding-top: 50px;
+  grid-template-areas: "titulo-envio ." "medios-pago  direccion";
+}
+.envio .titulo-envio-pago {
+  grid-area: titulo-envio;
+  margin-left: 10px;
+}
+.envio .medio-pago {
+  grid-area: medios-pago;
+  margin-left: 80px;
+}
+.envio .direccion {
+  grid-area: direccion;
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.envio .direccion input {
+  margin: 10px;
+}
+.envio .boton-compra {
+  grid-area: boton-compra;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
