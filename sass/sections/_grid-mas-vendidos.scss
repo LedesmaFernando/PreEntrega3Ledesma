@@ -1,0 +1,33 @@
+.mas-vendidos {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 350px 350px;
+    justify-content: center;
+    align-items: center;
+    background: url("https://st2.depositphotos.com/1028911/9637/i/950/depositphotos_96370274-stock-photo-supermarket-interior-with-shelves-full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #3232b1ee;
+        color: white;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px rgb(61, 60, 60);
+
+        img {
+            width: 200px;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        img:hover {
+            box-shadow: grey 5px 5px 5px 5px;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Perfil</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary letra">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Chango</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="Inicio" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="#" aria-current="Perfil" href="./perfil.html">Perfil</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Carrito</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu navbar-dark bg-primary bg-primary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item lista" href="#">Almacen</a></li>
+                  <li><a class="dropdown-item lista" href="#">Frutas y Verduras</a></li>
+                  <li><a class="dropdown-item lista" href="#">Electro</a></li>
+                  <li><a class="dropdown-item lista" href="#">Bebidas</a></li>
+                  <li><a class="dropdown-item lista" href="#">Panaderia</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Producto"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success boton-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="formulario-padre">
+        <form class="form-row m-5 formulario">
+            <div class="col-md-6 align-self-center">
+                <h2 class="registro-titulo">Registro</h2>
+            </div>
+            <div class="col-md-7 align-self-center">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" name="nombre" placeholder="Fernando">
+            </div>
+            <div class="col-md-7 align-self-center">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" name="apellido" placeholder="Ledesma">
+            </div>
+            <div class="col-md-7 align-self-center">
+                <label for="email">email</label>
+                <input type="email" class="form-control" name="email" id="" placeholder="asasas@gmail.com">
+            </div>
+            <div class="col-md-7 align-self-center">
+                <label for="direccion">Direccion</label>
+                <input type="text" class="form-control" name="direccion">
+            </div>
+            <div class="col-md-7 align-self-center">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" name="password" id="">
+            </div>
+            <div class="form-check align-self-center">
+                <input type="checkbox" class="form-check-input" name="terminos-condiciones" id="">
+                <label for="terminos" class="form-check-label">Estoy deacuerdo con los <a href="">Terminos y condiciones?</a></label>
+            </div>
+            <div class="align-self-center">
+                <input type="submit" class="boton-registro" value="Enviar">
+            </div>
+            <div class="align-self-center">
+                <a href="">Ya tengo cuenta</a>
+            </div>
+        </form>
+      </section>
+      <footer class="pie">      
+        <p>Ledesma Fernando</p>
+        <p>mail:asdasda@gmail.com</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

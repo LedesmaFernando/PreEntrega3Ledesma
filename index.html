@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary letra">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Chango</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="Inicio" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/perfil.html">Perfil</a>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/carrito.html">Carrito</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorias
+              </a>
+              <ul class="dropdown-menu navbar-dark bg-primary bg-primary" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item lista" href="#">Almacen</a></li>
+                <li><a class="dropdown-item lista" href="#">Frutas y Verduras</a></li>
+                <li><a class="dropdown-item lista" href="#">Electro</a></li>
+                <li><a class="dropdown-item lista" href="#">Bebidas</a></li>
+                <li><a class="dropdown-item lista" href="#">Panaderia</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Producto"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success boton-buscar" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./resources/carrusel1.webp" class="d-block w-100" alt="Propaganda1">
+        </div>
+        <div class="carousel-item">
+          <img src="./resources/carrusel2.webp" class="d-block w-100" alt="Propaganda2">
+        </div>
+        <div class="carousel-item">
+          <img src="./resources/carrusel3.webp" class="d-block w-100" alt="Propaganda3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section class="mas-vendidos">
+      <div>
+        <img src="./resources/aceite natura.webp" alt="Aceite de Girasol">
+        <p>Aceite de Girasol - 1.5L</p>
+        <p>$1997.8</p>
+      </div>
+      <div>
+        <img src="./resources/cocina.webp" alt="Cocina Whilpool">
+        <p>Whilpool Cocina</p>
+        <p>$969.999</p>
+      </div>
+      <div>
+        <img src="./resources/heladera.webp" alt="Heladera Samsung">
+        <p>Heladera Samsung -350L</p>
+        <p>$1.291.999</p>
+      </div>
+      <div>
+        <img src="./resources/yerba.webp" alt="Yerba Playadito">
+        <p>Playadito - 1kg</p>
+        <p>$2668.25</p>
+      </div>
+      <div>
+        <img src="./resources/pedigree.webp" alt="Pedigree Alimento mascotas">
+        <p>Pedigree - 3kg</p>
+        <p>$8160</p>
+      </div>
+      <div>
+        <img src="./resources/cerveza heineken.webp" alt="cerveza heineken">
+        <p>Heineken - 330ml</p>
+        <p>$1600</p>
+      </div>
+    </section>
+    <footer class="pie">
+      
+        <p>Ledesma Fernando</p>
+        <p>mail:asdasda@gmail.com</p>
+        <p>Todos los derechos reservados</p>
+      
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

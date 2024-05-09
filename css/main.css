@@ -1,0 +1,220 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.lista {
+  color: white;
+}
+
+.boton-buscar {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.letra {
+  font-size: 20px;
+}
+
+.mas-vendidos {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 350px 350px;
+  justify-content: center;
+  align-items: center;
+  background: url("https://st2.depositphotos.com/1028911/9637/i/950/depositphotos_96370274-stock-photo-supermarket-interior-with-shelves-full.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mas-vendidos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50, 50, 177, 0.9333333333);
+  color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(61, 60, 60);
+}
+.mas-vendidos div img {
+  width: 200px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.mas-vendidos div img:hover {
+  box-shadow: grey 5px 5px 5px 5px;
+}
+
+@media (max-width: 900px) {
+  .mas-vendidos {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 350px 350px 350px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+.pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.formulario-padre {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F551945fe-7db9-46f1-9bdc-dbc031776849_785x502.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formulario-padre .registro-titulo {
+  text-align: center;
+}
+.formulario-padre .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  border-radius: 10px;
+  background-color: rgb(71, 71, 175);
+}
+.formulario-padre .formulario a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+.formulario-padre .formulario a:hover {
+  color: orange;
+}
+.formulario-padre .formulario .boton-registro {
+  width: 120px;
+  height: 2rem;
+  margin: 10px 0 10px 0;
+}
+
+.compra {
+  border: solid red 1px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+.compra .articulos {
+  width: 30%;
+  height: 450px;
+  margin: 15px;
+  padding-top: 50px;
+  border-radius: 10px;
+  border: blue solid 1px;
+  display: grid;
+  background-color: rgb(79, 79, 168);
+  grid-template-rows: repeat(6, 50px);
+  grid-template-areas: "titulo-compra ." "producto1 precio1" "producto2 precio2" "producto3 precio3" "producto4 precio4" ". ." "total suma";
+}
+.compra .titulo-compra {
+  grid-area: titulo-compra;
+  margin-left: 10px;
+}
+.compra .producto1 {
+  grid-area: producto1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.compra .precio1 {
+  grid-area: precio1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compra .producto2 {
+  grid-area: producto2;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.compra .precio2 {
+  grid-area: precio2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compra .producto3 {
+  grid-area: producto3;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.compra .precio3 {
+  grid-area: precio3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compra .producto4 {
+  grid-area: producto4;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.compra .precio4 {
+  grid-area: precio4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compra .total {
+  grid-area: total;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.compra .suma {
+  grid-area: suma;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compra label {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0px 10px;
+}
+.compra p {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0px;
+}
+
+.envio {
+  background-color: #1757E5;
+  border: red solid 1px;
+  width: 70%;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+.formulario-padre {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F551945fe-7db9-46f1-9bdc-dbc031776849_785x502.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .registro-titulo {
+        text-align: center;
+    };
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 600px;
+        border-radius: 10px;
+        background-color: rgb(71, 71, 175);
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .boton-registro {
+            width: 120px;
+            height: 2rem;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
