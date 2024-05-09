@@ -259,4 +259,59 @@
   margin: 20px 80px;
 }
 
+.contacto-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  height: 80px;
+  background-color: #4DACE3;
+}
+
+.contacto {
+  background-color: #2727E6;
+  padding-top: 50px;
+  display: grid;
+  grid-template-rows: repeat(3, 130px);
+  grid-template-areas: "telefono consulta" "mail consulta" "direccion-contacto .";
+}
+.contacto .telefono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: telefono;
+}
+.contacto .mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: mail;
+}
+.contacto .direccion-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: direccion-contacto;
+}
+.contacto .consulta {
+  grid-area: consulta;
+}
+.contacto .consulta-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .consulta-texto input {
+  width: 100px;
+  justify-content: right;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.contacto p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */

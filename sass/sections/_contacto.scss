@@ -1,0 +1,58 @@
+$color-seccion: #4DACE3;
+$color-seccion2:#2727E6;
+.contacto-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    height: 80px;
+    background-color: $color-seccion;
+}
+.contacto{
+    background-color: $color-seccion2;
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(3, 130px);
+    grid-template-areas:"telefono consulta"
+                        "mail consulta"
+                        "direccion-contacto .";
+    
+    .telefono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: telefono;
+    };
+    .mail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: mail;
+    };
+    .direccion-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: direccion-contacto;
+    };
+    .consulta{
+        grid-area: consulta;
+    }
+    .consulta-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 100px;
+            justify-content: right;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+};
