@@ -55,9 +55,11 @@
   border-radius: 8px;
   margin-top: 30px;
   margin-bottom: 10px;
+  transition: 1s ease-in-out;
 }
 .mas-vendidos div img:hover {
   box-shadow: grey 5px 5px 5px 5px;
+  transform: scale(0.95);
 }
 
 @media (max-width: 900px) {
@@ -312,6 +314,7 @@
 }
 .contenido-nosotros h1 {
   font-size: 4rem;
+  transform: rotate(-3deg);
 }
 .contenido-nosotros p {
   font-size: 1.2rem;
@@ -340,17 +343,29 @@
   align-items: center;
   grid-area: telefono;
 }
+.contacto .telefono:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 .contacto .mail {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: mail;
 }
+.contacto .mail:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 .contacto .direccion-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: direccion-contacto;
+}
+.contacto .direccion-contacto:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 .contacto .consulta {
   grid-area: consulta;

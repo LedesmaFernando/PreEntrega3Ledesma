@@ -24,10 +24,11 @@
             border-radius: 8px;
             margin-top: 30px;
             margin-bottom: 10px;
-        }
-
-        img:hover {
-            box-shadow: grey 5px 5px 5px 5px;
+            transition: 1s ease-in-out;
+            &:hover{
+                box-shadow: grey 5px 5px 5px 5px;
+                transform: scale(0.95);
+            }
         }
     }
 }

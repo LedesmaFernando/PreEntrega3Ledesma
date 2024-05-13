@@ -22,18 +22,31 @@ $color-seccion2:#2727E6;
         justify-content: center;
         align-items: center;
         grid-area: telefono;
+        &:hover{
+            transform: scale(1.10);
+            transition: 1s;
+        }
+        
     };
     .mail{
         display: flex;
         justify-content: center;
         align-items: center;
         grid-area: mail;
+        &:hover{
+            transform: scale(1.10);
+            transition: 1s;
+        }
     };
     .direccion-contacto{
         display: flex;
         justify-content: center;
         align-items: center;
         grid-area: direccion-contacto;
+        &:hover{
+            transform: scale(1.10);
+            transition: 1s;
+        }
     };
     .consulta{
         grid-area: consulta;
