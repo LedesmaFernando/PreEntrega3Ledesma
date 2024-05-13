@@ -105,14 +105,30 @@
   }
 }
 @media (max-width: 950px) {
-  .envio {
+  .compra {
+    height: 1300px !important;
+    margin: auto;
+  }
+  .compra .articulos {
+    margin: auto !important;
+  }
+  .compra .envio {
+    height: 750px;
     width: 90%;
-    margin: 15px;
+    margin-bottom: 50px;
     border-radius: 15px;
     display: grid;
-    grid-template-rows: 50px 350px 350px;
+    grid-template-rows: 50px 300px 300px;
     padding-top: 50px;
     grid-template-areas: "titulo-envio" "medios-pago" "direccion" !important;
+  }
+  .compra .envio .medio-pago {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .compra .envio .direccion {
+    margin: auto;
+    padding-bottom: 150px;
   }
 }
 .pie {
