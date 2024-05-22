@@ -10,6 +10,8 @@ $color-fondo: #4D4DE3;
     padding-top: 50px;
     grid-template-areas:"titulo-envio ."
                         "medios-pago  direccion";
+    
+    
     .titulo-envio-pago{
         grid-area: titulo-envio;
         margin-left: 10px
@@ -32,4 +34,5 @@ $color-fondo: #4D4DE3;
         display: flex;
         justify-content: center;
     }
+
 }

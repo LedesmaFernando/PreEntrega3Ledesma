@@ -1,10 +1,10 @@
 $color-fondo: #4D4DE3;
 $color-seccion: #4DACE3;
 .compra{
-    height: 500px;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: $color-seccion;
+    background-color: $color-seccion;    
     .articulos{
         width: 30%;
         height: 450px;

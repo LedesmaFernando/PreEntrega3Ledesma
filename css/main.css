@@ -31,6 +31,7 @@
 
 .mas-vendidos {
   display: grid;
+  min-height: 100vh;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: 350px 350px;
   justify-content: center;
@@ -145,6 +146,7 @@
 }
 
 .formulario-padre {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   color: white;
@@ -178,7 +180,7 @@
 }
 
 .compra {
-  height: 500px;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   background-color: #4DACE3;
@@ -304,6 +306,7 @@
 }
 
 .contenido-nosotros {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,6 +334,7 @@
 }
 
 .contacto {
+  min-height: 100vh;
   background-color: #2727E6;
   padding-top: 50px;
   display: grid;

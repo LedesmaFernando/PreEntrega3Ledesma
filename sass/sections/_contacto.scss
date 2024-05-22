@@ -9,6 +9,7 @@ $color-seccion2:#2727E6;
     background-color: $color-seccion;
 }
 .contacto{
+    min-height: 100vh;
     background-color: $color-seccion2;
     padding-top: 50px;
     display: grid;
@@ -68,4 +69,4 @@ $color-seccion2:#2727E6;
         font-weight: bold;
         color: white;
     }
-};
+}

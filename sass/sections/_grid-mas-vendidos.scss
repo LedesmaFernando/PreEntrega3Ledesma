@@ -1,5 +1,6 @@
 .mas-vendidos {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: 350px 350px;
     justify-content: center;
