@@ -29,6 +29,10 @@
   background-color: #1757E5;
 }
 
+.navbar {
+  z-index: 1000;
+}
+
 .mas-vendidos {
   display: grid;
   min-height: 100vh;
@@ -132,6 +136,11 @@
   .compra .envio .direccion {
     margin: auto;
     padding-bottom: 150px;
+  }
+}
+@media (max-width: 950px) {
+  .formulario-padre .formulario {
+    height: 500px;
   }
 }
 .pie {
