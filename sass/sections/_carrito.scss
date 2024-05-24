@@ -1,0 +1,116 @@
+$color-fondo: #4D4DE3;
+$color-seccion: #4DACE3;
+.carro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-seccion;
+    height: 100vh;
+    p{
+        color: white;
+        font-size: 1.2rem;
+    }
+    .lista-productos{
+        border-radius: 20px;
+        background-color: $color-fondo;
+        margin: 30px;
+        width: 40%;
+        height: 500px;
+        display: grid;
+        grid-template-rows: 50px 300px;
+        grid-template-areas:    "titulo-lista ."
+                                ". lista";
+        label{
+            font-size: 1.2rem;
+        }
+                               
+        .titulo-lista{
+            margin: 10px 20px;
+            grid-area: titulo-lista;
+        }
+        .lista{
+            grid-area: lista;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 20px;
+            height: 300px;
+            ul{
+                list-style: none;
+            
+        }
+        .total{
+            text-align: center;
+        }
+        .confirma-boton{
+            width: 100px;
+            height: 40px;
+        }
+    }
+
+    }
+    .detalle-compra{
+        background-color: $color-fondo;
+        margin-right: 30px;
+        border-radius: 20px;
+        width: 60%;
+        height: 500px;
+        .titulo-envio{
+            margin: 10px 20px;
+        }
+        .envio-formulario{
+            display: grid;
+            grid-template-areas:    "medio-pago . direccion-titulo"
+                                    "medio-titulo1 . lista-direccion"
+                                    "lista-credito . lista-direccion"
+                                    "medio-titulo2 . lista-direccion"
+                                    "lista-debito . lista-direccion";
+            ul{
+                list-style: none;
+                color: white;
+            }
+            label{
+                font-size: 1.2rem;
+                margin-left: 5px;
+            }
+            .lista-direccion{
+                grid-area: lista-direccion;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 5px;
+                input{
+                    height: 35px;
+                    width: 200px;
+                    margin: 5px;
+                }
+            }
+            .medio-pago{
+                grid-area: medio-pago;
+                margin-left: 70px;
+            }
+            .direccion-titulo{
+                grid-area: direccion-titulo;
+            }
+            .medio-titulo1{
+                grid-area: medio-titulo1;
+                margin-left: 70px;
+            }
+            .lista-credito{
+                grid-area: lista-credito;
+                margin-left: 70px;
+            }
+            .medio-titulo2{
+                grid-area: medio-titulo2;
+                margin-left: 70px;
+            }
+            .lista-debito{
+                grid-area: lista-debito;
+                margin-left: 70px;
+            }
+        }
+    }
+
+}

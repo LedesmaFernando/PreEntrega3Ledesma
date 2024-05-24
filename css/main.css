@@ -101,46 +101,34 @@
   }
 }
 @media (max-width: 950px) {
-  .compra {
-    height: 500px;
-    display: flex;
-    flex-direction: column !important;
-  }
-  .compra .articulos {
-    width: 90% !important;
-    margin: 15px;
-  }
-}
-@media (max-width: 950px) {
-  .compra {
-    height: 1300px !important;
-    margin: auto;
-  }
-  .compra .articulos {
-    margin: auto !important;
-  }
-  .compra .envio {
-    height: 750px;
-    width: 90%;
-    margin-bottom: 50px;
-    border-radius: 15px;
-    display: grid;
-    grid-template-rows: 50px 300px 300px;
-    padding-top: 50px;
-    grid-template-areas: "titulo-envio" "medios-pago" "direccion" !important;
-  }
-  .compra .envio .medio-pago {
-    margin: auto;
-    padding-bottom: 50px;
-  }
-  .compra .envio .direccion {
-    margin: auto;
-    padding-bottom: 150px;
-  }
-}
-@media (max-width: 950px) {
   .formulario-padre .formulario {
     height: 500px;
+  }
+}
+@media (max-width: 950px) {
+  .carro {
+    flex-direction: column;
+  }
+  .carro .lista-productos {
+    width: 300px !important;
+    grid-template-areas: "titulo-lista" "lista" !important;
+  }
+  .carro .detalle-compra {
+    height: 800px !important;
+    width: 300px !important;
+    margin: 0px 0px 20px 0px !important;
+  }
+  .carro .detalle-compra .envio-formulario {
+    grid-template-areas: "medio-pago" "medio-titulo1" "lista-credito" "medio-titulo2" "lista-debito" "direccion-titulo" "lista-direccion" "lista-direccion" "lista-direccion" "lista-direccion" !important;
+  }
+  .carro .detalle-compra .envio-formulario .medio-pago {
+    margin-left: 10px !important;
+  }
+  .carro .detalle-compra .envio-formulario .direccion-titulo {
+    margin-left: 10px !important;
+  }
+  .carro .detalle-compra .envio-formulario .lista-direccion {
+    margin-right: 30px !important;
   }
 }
 .pie {
@@ -186,132 +174,6 @@
   width: 120px;
   height: 2rem;
   margin: 10px 0 10px 0;
-}
-
-.compra {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  background-color: #4DACE3;
-}
-.compra .articulos {
-  width: 30%;
-  height: 450px;
-  margin: 15px;
-  padding-top: 50px;
-  border-radius: 10px;
-  display: grid;
-  background-color: #4D4DE3;
-  grid-template-rows: repeat(6, 50px);
-  grid-template-areas: "titulo-compra ." "producto1 precio1" "producto2 precio2" "producto3 precio3" "producto4 precio4" ". ." "total suma";
-}
-.compra .titulo-compra {
-  grid-area: titulo-compra;
-  margin-left: 10px;
-}
-.compra .producto1 {
-  grid-area: producto1;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.compra .precio1 {
-  grid-area: precio1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.compra .producto2 {
-  grid-area: producto2;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.compra .precio2 {
-  grid-area: precio2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.compra .producto3 {
-  grid-area: producto3;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.compra .precio3 {
-  grid-area: precio3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.compra .producto4 {
-  grid-area: producto4;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.compra .precio4 {
-  grid-area: precio4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.compra .total {
-  grid-area: total;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.compra .suma {
-  grid-area: suma;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.compra label {
-  font-size: 1.2rem;
-  color: white;
-  margin: 0px 10px;
-}
-.compra p {
-  font-size: 1.2rem;
-  color: white;
-  margin: 0px;
-}
-
-.envio {
-  background-color: #4D4DE3;
-  height: 450px;
-  width: 70%;
-  margin: 15px;
-  border-radius: 15px;
-  display: grid;
-  grid-template-rows: 50px 350px;
-  padding-top: 50px;
-  grid-template-areas: "titulo-envio ." "medios-pago  direccion";
-}
-.envio .titulo-envio-pago {
-  grid-area: titulo-envio;
-  margin-left: 10px;
-}
-.envio .medio-pago {
-  grid-area: medios-pago;
-  margin-left: 80px;
-}
-.envio .direccion {
-  grid-area: direccion;
-  display: flex;
-  flex-direction: column;
-  margin-right: 80px;
-}
-.envio .direccion input {
-  margin: 10px;
-}
-.envio .boton-compra {
-  grid-area: boton-compra;
-  display: flex;
-  justify-content: center;
 }
 
 .contenido-nosotros {
@@ -399,6 +261,112 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+
+.carro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4DACE3;
+  height: 100vh;
+}
+.carro p {
+  color: white;
+  font-size: 1.2rem;
+}
+.carro .lista-productos {
+  border-radius: 20px;
+  background-color: #4D4DE3;
+  margin: 30px;
+  width: 40%;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 50px 300px;
+  grid-template-areas: "titulo-lista ." ". lista";
+}
+.carro .lista-productos label {
+  font-size: 1.2rem;
+}
+.carro .lista-productos .titulo-lista {
+  margin: 10px 20px;
+  grid-area: titulo-lista;
+}
+.carro .lista-productos .lista {
+  grid-area: lista;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+  height: 300px;
+}
+.carro .lista-productos .lista ul {
+  list-style: none;
+}
+.carro .lista-productos .lista .total {
+  text-align: center;
+}
+.carro .lista-productos .lista .confirma-boton {
+  width: 100px;
+  height: 40px;
+}
+.carro .detalle-compra {
+  background-color: #4D4DE3;
+  margin-right: 30px;
+  border-radius: 20px;
+  width: 60%;
+  height: 500px;
+}
+.carro .detalle-compra .titulo-envio {
+  margin: 10px 20px;
+}
+.carro .detalle-compra .envio-formulario {
+  display: grid;
+  grid-template-areas: "medio-pago . direccion-titulo" "medio-titulo1 . lista-direccion" "lista-credito . lista-direccion" "medio-titulo2 . lista-direccion" "lista-debito . lista-direccion";
+}
+.carro .detalle-compra .envio-formulario ul {
+  list-style: none;
+  color: white;
+}
+.carro .detalle-compra .envio-formulario label {
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+.carro .detalle-compra .envio-formulario .lista-direccion {
+  grid-area: lista-direccion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+.carro .detalle-compra .envio-formulario .lista-direccion input {
+  height: 35px;
+  width: 200px;
+  margin: 5px;
+}
+.carro .detalle-compra .envio-formulario .medio-pago {
+  grid-area: medio-pago;
+  margin-left: 70px;
+}
+.carro .detalle-compra .envio-formulario .direccion-titulo {
+  grid-area: direccion-titulo;
+}
+.carro .detalle-compra .envio-formulario .medio-titulo1 {
+  grid-area: medio-titulo1;
+  margin-left: 70px;
+}
+.carro .detalle-compra .envio-formulario .lista-credito {
+  grid-area: lista-credito;
+  margin-left: 70px;
+}
+.carro .detalle-compra .envio-formulario .medio-titulo2 {
+  grid-area: medio-titulo2;
+  margin-left: 70px;
+}
+.carro .detalle-compra .envio-formulario .lista-debito {
+  grid-area: lista-debito;
+  margin-left: 70px;
 }
 
 /*# sourceMappingURL=main.css.map */

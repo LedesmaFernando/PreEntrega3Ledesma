@@ -37,50 +37,46 @@
 }
 }
 @media(max-width: 950px){
-    .compra{
-        height: 500px;
-        display: flex;
-        flex-direction: column !important;
-        .articulos{
-            width: 90% !important;
-            margin: 15px;
-        }
-}
-}
-@media(max-width: 950px){
-    .compra{
-        height: 1300px !important;
-        margin: auto;
-        .articulos{
-            margin: auto !important;
-        };
-        .envio{
-            height: 750px;
-            width: 90%;
-            margin-bottom: 50px;
-            border-radius: 15px;
-            display: grid;
-            grid-template-rows: 50px 300px 300px;
-            padding-top: 50px;
-            grid-template-areas:"titulo-envio"
-                                "medios-pago"
-                                "direccion" !important;
-                                .medio-pago{
-                                    margin: auto;
-                                    padding-bottom: 50px;
-                                };
-                                .direccion{
-                                    margin: auto;
-                                    padding-bottom: 150px;
-                                }
-                }
-    
-            }
-}
-@media(max-width: 950px){
     .formulario-padre {
         .formulario{
             height: 500px;
         }
+}
+}
+@media(max-width: 950px){
+    .carro{
+        flex-direction: column;
+        .lista-productos{
+            width: 300px !important;
+            grid-template-areas:    "titulo-lista"
+                                    "lista" !important;
+        }
+        .detalle-compra{
+            height: 800px !important;
+            width: 300px !important;
+            margin: 0px 0px 20px 0px !important;
+        
+            .envio-formulario{
+                grid-template-areas:    "medio-pago"  
+                                        "medio-titulo1"
+                                        "lista-credito" 
+                                        "medio-titulo2" 
+                                        "lista-debito" 
+                                        "direccion-titulo"
+                                        "lista-direccion"
+                                        "lista-direccion"
+                                        "lista-direccion"
+                                        "lista-direccion" !important;
+                .medio-pago{
+                    margin-left: 10px !important;
+                }
+                .direccion-titulo{
+                    margin-left: 10px !important;
+                }
+                .lista-direccion{
+                    margin-right: 30px !important;
+                }          
+}
+}
 }
 }
